@@ -1,11 +1,10 @@
-name: Test Self-hosted Runner
-on: [push]
+name: Actions Runner Controller Demo
+on:
+  workflow_dispatch:
+
 jobs:
-  test:
-    runs-on: self-hosted
+  Explore-GitHub-Actions:
+    # You need to use the INSTALLATION_NAME from the previous step
+    runs-on: arc-runner-set
     steps:
-      - uses: actions/checkout@v2
-      - name: Test Runner
-        run: |
-          echo "Hello from self-hosted runner!"
-          hostname
+    - run: echo "🎉 This job uses runner scale set runners!"
