@@ -4,7 +4,7 @@ on: [push]
 jobs:
   Explore-GitHub-Actions:
     # You need to use the INSTALLATION_NAME from the previous step
-    runs-on: runner-set
+    runs-on: arc-set
     steps:
     - run: | 
             echo "🎉 This job uses runner scale set runner!"
